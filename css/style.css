@@ -1,0 +1,166 @@
+/********************************************
+------- INITIALISATION DU PROJET ------------
+********************************************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Fonts */
+/* Couleurs du projet */
+/********************************************
+------------------ HEADER -------------------
+********************************************/
+header {
+  width: 100%;
+  height: auto;
+  background-color: #353353;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px auto;
+}
+header .img-logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .img-logo img {
+  height: 80px;
+  width: 150px;
+}
+header .cont-lignes {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  width: 50px;
+  height: 42px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+header .cont-lignes .lignes {
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+header .cont-lignes .lignes:nth-child(1) {
+  top: 0px;
+}
+header .cont-lignes .lignes:nth-child(2) {
+  top: 18px;
+}
+header .cont-lignes .lignes:nth-child(3) {
+  top: 36px;
+}
+header .btn1.active .lignes:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+header .btn1.active .lignes:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+header .btn1.active .lignes:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+header nav {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+}
+header nav .liste-nav {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+header nav .liste-nav.active-menu {
+  display: block;
+}
+header nav .item-nav {
+  display: flex;
+  justify-content: center;
+}
+header nav .item-nav a {
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/********************************************
+------------------ ACCUEIL ------------------
+********************************************/
+#accueil {
+  margin-top: 80px;
+}
+#accueil h1 {
+  font-family: "Poppins", sans-serif;
+  color: #3B2E4D;
+  font-size: 42px;
+  font-weight: medium;
+  text-align: center;
+}
+#accueil h3 {
+  font-family: "Nunito", sans-serif;
+  color: #3B2E4D;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 20px;
+}
+#accueil .bloc-picto {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+#accueil .acces-site {
+  margin-top: 100px;
+  height: 150px;
+  background-color: #353353;
+}
+#accueil .acces-site span {
+  padding-top: 30px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+}
+#accueil .acces-site .btn-acces-site {
+  width: 228px;
+  height: 40px;
+  border: 2px solid #55ABB7;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px auto;
+}
+#accueil .acces-site .btn-acces-site a {
+  color: #55ABB7;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 35px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
