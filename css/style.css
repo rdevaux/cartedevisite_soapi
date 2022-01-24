@@ -137,14 +137,14 @@ header nav .item-nav a {
   background-color: #353353;
 }
 #accueil .acces-site span {
-  padding-top: 30px;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
   font-family: "Nunito", sans-serif;
-  font-weight: bold;
   color: white;
   font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  display: block;
+  text-transform: uppercase;
 }
 #accueil .acces-site .btn-acces-site {
   width: 228px;
@@ -161,6 +161,50 @@ header nav .item-nav a {
   font-size: 18px;
   line-height: 35px;
   text-decoration: none;
+}
+
+/********************************************
+------------------ A PROPOS -----------------
+********************************************/
+#apropos {
+  margin-top: 80px;
+}
+#apropos h2 {
+  font-family: "Poppins", sans-serif;
+  color: #3B2E4D;
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+}
+#apropos #photo-laurent {
+  width: 200px;
+  height: 200px;
+  border-radius: 9999px;
+  border: 2px solid #3B2E4D;
+  display: block;
+  margin: 50px auto 10px;
+}
+#apropos span {
+  font-family: "Nunito", sans-serif;
+  color: #3B2E4D;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+#apropos p {
+  font-family: "Nunito", sans-serif;
+  color: #3B2E4D;
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 30px 20px;
+}
+#apropos #logo-trustpilot {
+  width: 193px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

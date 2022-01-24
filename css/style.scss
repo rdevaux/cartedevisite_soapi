@@ -26,6 +26,14 @@ body {
 @include googleFonts('Poppins');
 @include googleFonts('Nunito');
 
+@mixin propertyFonts($fontFamily, $fontColor, $fontSize, $fontWeight, $textAlign) {
+    font-family: $fontFamily, sans-serif;
+    color: $fontColor;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-align: $textAlign;
+}
+
 /* Couleurs du projet */
 
 $background-color: #353353;
@@ -133,19 +141,11 @@ header {
     margin-top: 80px;
 
     h1 {
-        font-family: 'Poppins', sans-serif;
-        color: $font-color;
-        font-size: 42px;
-        font-weight: medium;
-        text-align: center;
+        @include propertyFonts('Poppins', $font-color, 42px, medium, center);
     }
 
     h3 {
-        font-family: 'Nunito', sans-serif;
-        color: $font-color;
-        font-size: 18px;
-        font-weight: lighter;
-        text-align: center;
+        @include propertyFonts('Nunito', $font-color, 18px, lighter, center);
         margin-top: 20px;
     }
     
@@ -163,14 +163,10 @@ header {
         background-color: $background-color;
 
         span {
+            @include propertyFonts('Nunito', white, 24px, bold, center);
             padding-top: 30px;
             display: block;
-            text-align: center;
             text-transform: uppercase;
-            font-family: 'Nunito', sans-serif;
-            font-weight: bold;
-            color: white;
-            font-size: 24px;
         }
 
         .btn-acces-site {
@@ -190,5 +186,43 @@ header {
                 text-decoration: none;
             }
         }
+    }
+}
+
+/********************************************
+------------------ A PROPOS -----------------
+********************************************/
+
+#apropos {
+    margin-top: 80px;
+
+    h2 {
+        @include propertyFonts('Poppins', $font-color, 36px, medium, center);
+    }
+
+    #photo-laurent {
+        width: 200px;
+        height: 200px;
+        border-radius: 9999px;
+        border: 2px solid $font-color;
+        display: block;
+        margin: 50px auto 10px;
+    }
+
+    span {
+        @include propertyFonts('Nunito', $font-color, 24px, bold, center);
+        display: block;
+    }
+
+    p {
+        @include propertyFonts('Nunito', $font-color, 18px, lighter, center);
+        margin: 30px 20px;
+    }
+
+    #logo-trustpilot {
+        width: 193px;
+        height: 88px;
+        display: block;
+        margin: 0 auto;
     }
 }
