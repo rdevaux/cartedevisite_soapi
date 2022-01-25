@@ -18,7 +18,7 @@ body {
   width: 100%;
 }
 
-/* Fonts */
+/* Mixins */
 /* Couleurs du projet */
 /********************************************
 ------------------ HEADER -------------------
@@ -101,6 +101,8 @@ header nav .item-nav a {
   font-family: "Nunito", sans-serif;
   font-size: 1.5rem;
   color: #fff;
+  text-transform: uppercase;
+  line-height: 50px;
 }
 
 /********************************************
@@ -205,6 +207,103 @@ header nav .item-nav a {
   height: 88px;
   display: block;
   margin: 0 auto;
+}
+
+/********************************************
+---------------- NOS SERVICES ---------------
+********************************************/
+#nosservices {
+  margin-top: 80px;
+}
+#nosservices h2 {
+  font-family: "Poppins", sans-serif;
+  color: #3B2E4D;
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+}
+#nosservices .bloc-img-services {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#nosservices .bloc-img .bloc-img-1 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img .bloc-img-2 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img .bloc-img-3 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img .bloc-img-4 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img .bloc-img-5 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img .bloc-img-6 {
+  flex-shrink: 0;
+  width: 184px;
+  height: 183px;
+  background-image: url("../images/img-6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#nosservices .bloc-img span {
+  margin-top: 10px;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  color: #3B2E4D;
+  font-size: 16px;
+  font-weight: medium;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
