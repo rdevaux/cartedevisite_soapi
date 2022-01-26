@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carte de Visite - SO'API</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 
 <body>
@@ -16,10 +17,12 @@
         <div class="img-logo">
             <img src="images/logo2.png" alt="logo so'api">
         </div>
-        <div class="cont-lignes btn1">
-            <div class="lignes"></div>
-            <div class="lignes"></div>
-            <div class="lignes"></div>
+        <div class="menu-burger">
+            <div class="cont-lignes btn1">
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+            </div>
         </div>
         <nav>
             <ul class="liste-nav">
@@ -93,29 +96,49 @@
                 <div class="bloc-img-2"></div>
                 <span>E-Marketing</span>
             </div>
-
             <div class="bloc-img">
                 <div class="bloc-img-3"></div>
                 <span>Studio Photo</span>
             </div>
-
             <div class="bloc-img">
                 <div class="bloc-img-4"></div>
                 <span>Vidéo</span>
             </div>
-
             <div class="bloc-img">
                 <div class="bloc-img-5"></div>
                 <span>Conception Graphique</span>
             </div>
-
             <div class="bloc-img">
                 <div class="bloc-img-6"></div>
                 <span>Impression</span>
             </div>
-
         </div>
+    </section>
 
+    <!-- Nouveautés -->
+    <section id="nouveautes">
+        <h2>Nouveautés</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel inventore rerum aliquid nobis aliquam quas
+            dolore, obcaecati suscipit fugit. Nemo ipsam sint quam dignissimos quo?</p>
+        <img src="images/so-api-nouveaute-location-borne-selfie.png" alt="Image de location de borne à selfie">
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter">
+        <h2>Newsletter</h2>
+        <form>
+            <label for="email">Recevoir des notifications par mail</label>
+            <div class="input-container">
+                <span class="iconify" data-icon="fluent:mail-16-filled"></span>
+                <input type="email" name="mail" id="email">
+            </div>
+            <label for="sms">Recevoir des notifications par sms</label>
+            <div class="input-container">
+                <span class="iconify" data-icon="carbon:phone-filled"></span>
+                <input type="tel" name="phone" id="sms">
+            </div>
+            <button type="submit" class="btn">Soumettre</button>
+        </form>
     </section>
 
     <script src="app.js"></script>
