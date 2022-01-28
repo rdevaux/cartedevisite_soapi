@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: #f1f1f1;
 }
 
 body {
@@ -47,14 +48,31 @@ $background-color: #353353;
 $font-color: #3B2E4D;
 $btn-color: #55ABB7;
 
+/* Bouton du projet */
+
 .btn {
+    @extend %displayFlexCenter;
     width: 100%;
+    max-width: 500px;
     height: 50px;
-    margin-top: 30px;
+    margin: 30px auto 0;
     border: 0;
     border-radius: 10px;
     background-color: #55ABB7;
     @include propertyFonts('Nunito', white, 18px, bold, center);
+}
+
+/* Héritage */
+
+%padding {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+%displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /********************************************
@@ -72,9 +90,7 @@ header {
     .img-logo {
         grid-row: 1 / 2;
         grid-column: 1 / 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %displayFlexCenter;
 
         img {
             height: 80px;
@@ -163,7 +179,8 @@ header {
 ********************************************/
 
 #accueil {
-    margin-top: 80px;
+    @extend %padding;
+    background-color: white;
 
     h1 {
         @include propertyFonts('Poppins', $font-color, 42px, medium, center);
@@ -219,7 +236,8 @@ header {
 ********************************************/
 
 #apropos {
-    margin-top: 80px;
+    @extend %padding;
+    background-color: white;
 
     h2 {
         @include propertyFonts('Poppins', $font-color, 36px, medium, center);
@@ -257,7 +275,8 @@ header {
 ********************************************/
 
 #nosservices {
-    margin-top: 80px;
+    @extend %padding;
+    background-color: white;
 
     h2 {
         @include propertyFonts('Poppins', $font-color, 36px, medium, center);
@@ -265,9 +284,7 @@ header {
 
     .bloc-img-services {
         margin: 50px auto 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %displayFlexCenter;
         gap: 20px;
         flex-wrap: wrap;
         max-width: 600px;
@@ -301,18 +318,16 @@ header {
 ********************************************/
 
 #nouveautes {
-    margin-top: 80px;
-    padding-bottom: 50px;
+    @extend %padding;
     background-color: $background-color;
 
     h2 {
         @include propertyFonts('Poppins', white, 36px, medium, center);
-        padding-top: 50px;
     }
 
     p {
         @include propertyFonts('Nunito', white, 18px, lighter, center);
-        margin: 50px 20px 0;
+        margin: 50px 30px 0;
     }
 
     img {
@@ -329,7 +344,8 @@ header {
 ********************************************/
 
 #newsletter {
-    margin-top: 80px;
+    @extend %padding;
+    background-color: white;
 
     h2 {
         @include propertyFonts('Poppins', $font-color, 36px, medium, center);
@@ -349,6 +365,8 @@ header {
             border: 2px solid #3B2E4D;
             display: flex;
             padding: 20px;
+            margin: 0 auto;
+            max-width: 500px;
 
             .iconify {
                 width: 36px;
@@ -371,13 +389,11 @@ header {
 ********************************************/
 
 #partage {
-    margin-top: 80px;
+    @extend %padding;
     background-color: $background-color;
-    padding-bottom: 50px;
 
     h2 {
         @include propertyFonts('Poppins', white, 36px, medium, center);
-        padding-top: 50px;
     }
 
     .QR-code {
@@ -423,8 +439,8 @@ header {
 ********************************************/
 
 #contact {
-    margin: 50px 20px 0;
-    padding-bottom: 50px;
+    @extend %padding;
+    background-color: white;
     
     h2 {
         @include propertyFonts('Poppins', $font-color, 36px, medium, center);
@@ -443,13 +459,50 @@ header {
     }
 
     .btn-itineraire {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 30px auto;
+        max-width: 388px;
 
         a {
             text-decoration: none;
             color: white;
         }
+    }
+}
+
+/********************************************
+----------------- FOOTER --------------------
+********************************************/
+
+footer {
+    background-color: $background-color;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    #copyright {
+        @include propertyFonts('Nunito', white, 14px, bold, center);
+        margin-left: 20px;
+    }
+}
+
+/********************************************
+----------------- BTN UP --------------------
+********************************************/
+
+#btn-up {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FF8A73;
+    @extend %displayFlexCenter;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+
+    .iconify {
+        color: white;
+        width: 24px;
+        height: 24px;
     }
 }
