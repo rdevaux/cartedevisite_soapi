@@ -65,7 +65,7 @@ $btn-color: #55ABB7;
 /* Héritage */
 
 %padding {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -73,6 +73,15 @@ $btn-color: #55ABB7;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Séparateur */
+
+.separateur {
+    width: auto;
+    height: 16px;
+    background: url('https://api.iconify.design/bi/chevron-compact-up.svg');
+    background-color: white;
 }
 
 /********************************************
@@ -333,8 +342,8 @@ header {
     img {
         display: block;
         margin: 50px auto;
-        width: 388px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         border-radius: 40px;
     }
 }
@@ -452,9 +461,7 @@ header {
         margin-top: 50px;
     }
 
-    img {
-        display: block;
-        margin: 0 auto;
+    iframe {
         margin-top: 50px;
     }
 

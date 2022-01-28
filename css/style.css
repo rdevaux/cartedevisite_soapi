@@ -46,7 +46,7 @@ body {
 
 /* Héritage */
 #contact, #partage, #newsletter, #nouveautes, #nosservices, #apropos, #accueil {
-  padding-top: 80px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -54,6 +54,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Séparateur */
+.separateur {
+  width: auto;
+  height: 16px;
+  background: url("https://api.iconify.design/bi/chevron-compact-up.svg");
+  background-color: white;
 }
 
 /********************************************
@@ -365,8 +373,8 @@ header nav .item-nav a {
 #nouveautes img {
   display: block;
   margin: 50px auto;
-  width: 388px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 40px;
 }
 
@@ -489,9 +497,7 @@ header nav .item-nav a {
   display: block;
   margin-top: 50px;
 }
-#contact img {
-  display: block;
-  margin: 0 auto;
+#contact iframe {
   margin-top: 50px;
 }
 #contact .btn-itineraire {
